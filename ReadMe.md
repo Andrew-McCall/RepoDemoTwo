@@ -1,3 +1,4 @@
-Hello World
-Second
-Conflictt Two
+Hello World  
+
+Second  
+Third  
