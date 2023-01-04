@@ -1,0 +1,232 @@
+andre@TALUS MINGW64 /e/Documents/Scripts/QA
+$ ls
+ExpressDemo/   QAExpressDemo/  ReactDemo2/     ReactQuizPlayer/  RepoDemo/
+ExpressDemo2/  ReactDemo/      ReactExamples/  Repo4/
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA
+$ mkdir RepoDemoTwo
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA
+$ cd RepoDemoTwo
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo
+$ > ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo
+$ git init
+Initialized empty Git repository in E:/Documents/Scripts/QA/RepoDemoTwo/.git/
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (master)
+$ git add ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (master)
+$ git commit -m "Inital Commit"
+[master (root-commit) f99aef3] Inital Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (master)
+$ git branch -M main
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git remote add origin https://github.com/Andrew-McCall/RepoDemoTwo
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Andrew-McCall/RepoDemoTwo
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ notepad ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git add ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git commit -m "Added Text to the readme"
+[main eef5ba2] Added Text to the readme
+ 1 file changed, 1 insertion(+)
+g
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 262 bytes | 262.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Andrew-McCall/RepoDemoTwo
+   f99aef3..eef5ba2  main -> main
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git branch Second
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git checkout Second
+Switched to branch 'Second'
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Second)
+$ notepad ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Second)
+$ git add ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Second)
+$ git commit -m "Added Second Text"
+[Second f36ad1d] Added Second Text
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+g
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Second)
+$ git push -u origin Second
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 264 bytes | 264.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Second' on GitHub by visiting:
+remote:      https://github.com/Andrew-McCall/RepoDemoTwo/pull/new/Second
+remote:
+To https://github.com/Andrew-McCall/RepoDemoTwo
+ * [new branch]      Second -> Second
+branch 'Second' set up to track 'origin/Second'.
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Second)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ notepad ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git add ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git commit -m "Conflict Added"
+[main 870c736] Conflict Added
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 266 bytes | 266.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Andrew-McCall/RepoDemoTwo
+   eef5ba2..870c736  main -> main
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git merge Second
+Auto-merging ReadMe.md
+CONFLICT (content): Merge conflict in ReadMe.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main|MERGING)
+$ notepad ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main|MERGING)
+$ git add ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main|MERGING)
+$ git commit -m "Solved Merge Conflict"
+[main 323e166] Solved Merge Conflict
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Andrew-McCall/RepoDemoTwo
+   870c736..323e166  main -> main
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git checkout Second
+Switched to branch 'Second'
+Your branch is up to date with 'origin/Second'.
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Second)
+$ git branch Third
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Second)
+$ git checkout Third
+Switched to branch 'Third'
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Third)
+$ notepad ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Third)
+$ git add ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Third)
+$ git commit -m "Added Third "
+[Third cd2399f] Added Third
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Third)
+$ git push -u origin Third
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Third' on GitHub by visiting:
+remote:      https://github.com/Andrew-McCall/RepoDemoTwo/pull/new/Third
+remote:
+To https://github.com/Andrew-McCall/RepoDemoTwo
+ * [new branch]      Third -> Third
+branch 'Third' set up to track 'origin/Third'.
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Third)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ notepad ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git add ReadMe.md
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git commit -m "Added Second Conflict"
+[main 5fc06ee] Added Second Conflict
+ 1 file changed, 1 insertion(+)
+g
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Andrew-McCall/RepoDemoTwo
+   323e166..5fc06ee  main -> main
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ PULL REQUEST ON GITHUB.COM
+bash: PULL: command not found
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.27 KiB | 11.00 KiB/s, done.
+From https://github.com/Andrew-McCall/RepoDemoTwo
+   5fc06ee..d4d3536  main       -> origin/main
+   cd2399f..b8c6225  Third      -> origin/Third
+Updating 5fc06ee..d4d3536
+Fast-forward
+ ReadMe.md | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ cat ReadMe.md
+Hello World
+
+Second
+Third
