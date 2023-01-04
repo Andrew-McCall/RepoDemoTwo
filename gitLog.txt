@@ -1,0 +1,65 @@
+commit 0319a9f809786dba30caf607beabf98b006adfed (HEAD -> main, origin/main, origin/HEAD)
+Author: Andrew-McCall <amccall@qa.com>
+Date:   Wed Jan 4 13:43:21 2023 +0000
+
+    Added what i did
+
+commit d4d3536d6513b5106d75604707b85ef9cc79bbe3
+Merge: 5fc06ee b8c6225
+Author: Andrew-McCall <83285103+Andrew-McCall@users.noreply.github.com>
+Date:   Wed Jan 4 13:41:38 2023 +0000
+
+    Merge pull request #1 from Andrew-McCall/Third
+
+    Added Third
+
+commit b8c6225656585b6750ac25e4a98f0d23158d00c0 (origin/Third)
+Merge: cd2399f 5fc06ee
+Author: Andrew-McCall <83285103+Andrew-McCall@users.noreply.github.com>
+Date:   Wed Jan 4 13:41:30 2023 +0000
+
+    Merge branch 'main' into Third
+
+commit 5fc06ee6352f7f2f5041b7cac0e275344a8b2c23
+Author: Andrew-McCall <amccall@qa.com>
+Date:   Wed Jan 4 13:40:46 2023 +0000
+
+    Added Second Conflict
+
+commit cd2399fbc9dc63c7399acb1ba0971f9346066b70
+Author: Andrew-McCall <amccall@qa.com>
+Date:   Wed Jan 4 13:40:03 2023 +0000
+
+    Added Third
+
+commit 323e1663972f10d7b63d0d60af58b1b28bd2d406
+Merge: 870c736 f36ad1d
+Author: Andrew-McCall <amccall@qa.com>
+Date:   Wed Jan 4 13:38:44 2023 +0000
+
+    Solved Merge Conflict
+
+commit 870c736f62bea4f0008eb3f680431ee095f8449a
+Author: Andrew-McCall <amccall@qa.com>
+Date:   Wed Jan 4 13:37:59 2023 +0000
+
+    Conflict Added
+
+commit f36ad1d7dc6a07a58a6971820e6cadc31afc27b5
+Author: Andrew-McCall <amccall@qa.com>
+Date:   Wed Jan 4 13:37:09 2023 +0000
+
+    Added Second Text
+
+commit eef5ba2519d5b0084ffb0c14782962b2b0e583a0
+Author: Andrew-McCall <amccall@qa.com>
+Date:   Wed Jan 4 13:36:18 2023 +0000
+
+    Added Text to the readme
+
+commit f99aef3712a0334b1544a2b49e6244ffb98f72f5
+Author: Andrew-McCall <amccall@qa.com>
+Date:   Wed Jan 4 13:35:03 2023 +0000
+
+    Inital Commit
+
