@@ -1,0 +1,48 @@
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Second)
+$ cd ..
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA
+$ rm -rf RepoDemoTwo
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA
+$ ls
+ExpressDemo/   QAExpressDemo/  ReactDemo2/     ReactQuizPlayer/  RepoDemo/
+ExpressDemo2/  ReactDemo/      ReactExamples/  Repo4/
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA
+$ git clone https://github.com/Andrew-McCall/RepoDemoTwo
+Cloning into 'RepoDemoTwo'...
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 28 (delta 2), reused 22 (delta 0), pack-reused 0
+Receiving objects: 100% (28/28), 4.34 KiB | 4.34 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA
+$ cd RepoDemoTwo
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ cat ReadMe.md
+Hello World
+
+Second
+Third
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/Second
+  remotes/origin/Third
+  remotes/origin/main
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (main)
+$ git checkout Second
+Switched to a new branch 'Second'
+branch 'Second' set up to track 'origin/Second'.
+
+andre@TALUS MINGW64 /e/Documents/Scripts/QA/RepoDemoTwo (Second)
+$ cat ReadMe.md
+Hello World
+Second
